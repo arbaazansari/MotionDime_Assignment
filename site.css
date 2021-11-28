@@ -1,0 +1,54 @@
+body {
+    background-color: #021035;
+}
+
+#rw {
+    margin-top: 14em;
+}
+
+#picture {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#txt {
+    display: block;
+    height: 220px;
+    text-align: center;
+}
+
+h1,
+p {
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: -1em;
+}
+
+p {
+    font-size: 22px;
+}
+
+#rw2 {
+    text-align: center;
+}
+
+.button {
+    background-color: #09547E;
+    border: none;
+    padding: 45px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button5 {
+    border-radius: 50%;
+}
+
+#bttn {
+    padding: 2em;
+}

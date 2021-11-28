@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="site.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="icon" href="md.png" type="image/gif" sizes="192x192">
+    <title>Motion Dime - Assignment</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="rw">
+            <div class="col-lg-1"></div>
+            <div class="col-md-12 col-lg-4">
+                <center><img src="images\\computerMan.gif" id="picture"></center>
+            </div>
+            <div class="col-md-12 col-lg-1" style="height:135px"></div>
+            <div class="col-md-12 col-lg-4" id="txt">
+                <h1 id="headingMain"></h1>
+                <p id="descMain"></p>
+            </div>
+        </div>
+        <div class="row" id="rw2">
+            <div class="col-lg-1"></div>
+            <div class="col-md-2" id="bttn">
+                <button class="button button5"
+                    onmouseout="display_out('images\\1.gif','Media agency | Motion Dime','Giving motion to every aspect of life');"
+                    onmouseover="display('images\\1.gif','Media agency | Motion Dime','Giving motion to every aspect of life');"
+                    onclick="display_Click('images\\1.gif','You have clicked','Media agency | Motion Dime Option');"></button>
+            </div>
+            <div class="col-md-2 col-lg-2" id="bttn">
+                <button class="button button5"
+                    onmouseout="display_out('images\\f.gif','Virtual Reality','We design, model and program virtual stores or exhibition stalls for your customers or clients to help them experience your products at the comfort of their home.');"
+                    onmouseover="display('images\\f.gif','Virtual Reality','We design, model and program virtual stores or exhibition stalls for your customers or clients to help them experience your products at the comfort of their home.');"
+                    onclick="display_Click('images\\f.gif','You have clicked','Virtual Reality Opton');"></button>
+            </div>
+            <div class="col-md-2 col-lg-2" id="bttn">
+                <button class="button button5"
+                    onmouseout="display_out('images\\c.gif','Branding and Identity','We co-create and communicate your business value with our creativity.');"
+                    onmouseover="display('images\\c.gif','Branding and Identity','We co-create and communicate your business value with our creativity.');"
+                    onclick="display_Click('images\\c.gif','You have clicked','Branding and Identity Option');"></button>
+            </div>
+            <div class="col-md-2 col-lg-2" id="bttn">
+                <button class="button button5"
+                    onmouseout="display_out('images\\2.gif','Social Media Management','We plan your Social Media profile, design posts, animate small videos and manage your entire social profile');"
+                    onmouseover="display('images\\2.gif','Social Media Management','We plan your Social Media profile, design posts, animate small videos and manage your entire social profile');"
+                    onclick="display_Click('images\\2.gif','You have clicked','Social Media Management Option');"></button>
+            </div>
+            <div class="col-md-2 col-lg-2" id="bttn">
+                <button class="button button5"
+                    onmouseout="display_out('images\\3.gif','Website and App Development','We provide you with Responsive Web design,Website Development , App Development, Domain and hosting Services, Software Development');"
+                    onmouseover="display('images\\3.gif','Website and App Development','We provide you with Responsive Web design,Website Development , App Development, Domain and hosting Services, Software Development');"
+                    onclick="display_Click('images\\3.gif','You have clicked','Website and App Development Option');"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        const display_Click = (imagePath, text1, text2) => {
+            $('#picture').attr('src', imagePath).show();
+            $('#headingMain').text(text1).show();
+            $('#descMain').text(text2).show();
+        }
+
+        const display = (imagePath, text1, text2) => {
+            $('#picture').attr('src', imagePath).fadeIn('slow')
+            $('h1').text(text1).fadeIn('slow');
+            $('p').text(text2).fadeIn('slow');
+        }
+
+        const display_out = (imagePath, text1, text2) => {
+            $('#picture').attr('src', imagePath).fadeOut("fast")
+            $('h1').text(text1).fadeOut("fast");
+            $('p').text(text2).fadeOut("fast");
+        }
+
+    </script>
+</body>
+
+</html>
